@@ -1,0 +1,67 @@
+/*Dead Simple Pure CSS Loading Spinner START*/
+  /*Copied from http://www.designcouch.com/home/why/2013/05/23/dead-simple-pure-css-loading-spinner/ */
+  /*Last editted by Praveen K.J. on 12Feb2014*/
+.shadowLink {
+  height: 250px; 
+  width: 250px; 
+  display: block;
+  background: #000; 
+  opacity: 0;
+  border-radius: 250px;
+
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+.shadowLink img {
+  height: 250px;
+  width: 250px;
+  display: block;
+}
+.shadowLink:hover {
+  opacity: 1;
+}
+.aligned {
+    margin:0px 0px;
+    position:absolute;
+    display: block;
+    top:10px;
+    left:50%;
+    transform: translate(-50%, 0);
+}
+.xspinner {
+    width: 250px;
+    height: 250px;
+  -webkit-animation: rotation 50s infinite linear;
+  -moz-animation: rotation 50s infinite linear;
+  -ms-animation: rotation 50s infinite linear;
+  -o-animation: rotation 50s infinite linear;
+  display:block;
+}
+
+@-webkit-keyframes rotation {
+  from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(359deg);}
+}
+@-moz-keyframes rotation {
+  from {-moz-transform: rotate(0deg);}
+  to {-moz-transform: rotate(359deg);}
+}
+@-ms-keyframes rotation {
+  from {-ms-transform: rotate(0deg);}
+  to {-ms-transform: rotate(359deg);}
+}
+@-o-keyframes rotation {
+  from {-o-transform: rotate(0deg);}
+  to {-o-transform: rotate(359deg);}
+}
+/*Dead Simple Pure CSS Loading Spinner END*/
+/*Login Alert Boxes START*/
+.login.warn {
+    background: #f83434;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+/*Login Alert Boxes END*/

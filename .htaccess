@@ -1,0 +1,23 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L] 
+</IfModule>
+
+# https://www.opentechguides.com/how-to/article/apache/115/htaccess-file-dir-security.html
+
+# Disable directory browsing 
+Options -Indexes
+
+# Deny access to files with extensions .md, .sql, .log, .sh
+<FilesMatch "\.(md|sql|log|sh)$">
+Order allow,deny
+Deny from all
+</FilesMatch>
+
+# Deny access to filenames starting with dot(.)
+<FilesMatch "^\.">
+Order allow,deny
+Deny from all
+</FilesMatch>

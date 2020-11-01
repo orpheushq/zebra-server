@@ -1,0 +1,56 @@
+html, body {
+    height: 100%;
+    background-color: #f2f2f2;
+}
+#app-header {
+    background-color: var(--mdc-theme-background);
+    color: var(--mdc-theme-text-primary-on-background);
+}
+#app-header .mdc-toolbar__section {
+    overflow: visible;
+}
+#app-nav-menu {
+    text-transform: uppercase;
+    padding-left: 16px;
+  }
+  
+  #app-nav-menu .mdc-temporary-drawer__drawer {
+    background-color: #fafafa;
+  }
+  
+  #app-nav-menu .mdc-temporary-drawer__header {
+    background: url(assets/logo.png) 32px 32px no-repeat;
+    background-size: 30%;
+  }
+  
+  #app-nav-menu .mdc-temporary-drawer__header::before {
+    padding-top: 30%;
+  }
+  
+  #app-nav-menu .mdc-temporary-drawer__content {
+    background: url(assets/diamond.svg) -32px bottom no-repeat;
+    background-size: 50%;
+  }
+  
+  #app-nav-menu .mdc-list-item {
+    height: 32px;
+    padding-left: 32px;
+    letter-spacing: .2em;
+  }
+  #app-nav-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 40px;
+    text-decoration: none;
+  }
+  
+  #app-nav-icon:visited,
+  #app-nav-icon:active,
+  #app-nav-icon:focus {
+    color: var(--mdc-theme-text-primary-on-background);
+  }
+  
+  #shrine-nav-menu {
+    text-transform: uppercase;
+    padding-left: 16px;
+  }
