@@ -74,7 +74,7 @@ $active_group = 'default';
 $query_builder = TRUE;
 $db = array();
 
-if ($_SERVER['HTTP_HOST'] != "orpheus.digital") {
+if ($_SERVER['HTTP_HOST'] != "akunahq.com") {
 	$db['default'] = array(
 		'dsn'	=> '',
 		'hostname' => 'localhost',
