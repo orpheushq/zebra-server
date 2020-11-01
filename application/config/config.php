@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 /*https://stackoverflow.com/questions/18075257/set-dynamic-base-url-in-codeigniter*/
-$allowed_domains = array('localhost', 'orpheus.digital');
+$allowed_domains = array('localhost', 'akunahq.com');
 $default_domain  = 'localhost';
 
 if (in_array($_SERVER['HTTP_HOST'], $allowed_domains, TRUE))
