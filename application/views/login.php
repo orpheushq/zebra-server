@@ -15,7 +15,7 @@ include "templates/top.php";
                 <?php echo validation_errors(); ?>
                 </php echo $status; ?>
                 <div class="aligned" style="z-index: 9000">
-                    <a href="https://orpheus.digital" class="shadowLink">
+                    <a href="#" class="shadowLink">
                         <img src='<?=base_url().'assets/images/512B.png';?>' >
                     </a>
                 </div>

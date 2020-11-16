@@ -2,7 +2,7 @@
     <h4 class="mdl-dialog__title">About App</h4>
     <div class="mdl-dialog__content">
         <div style="z-index: 9000; position: fixed;">
-            <a href="https://orpheus.digital" class="shadowLink">
+            <a href="#" class="shadowLink">
                 <img src='<?=base_url().'assets/images/512B.png';?>' >
             </a>
         </div>
@@ -12,15 +12,8 @@
         <div style="position: relative;">
             <img src='<?=base_url().'assets/images/orpheus.png';?>'>
         </div>
-        <p> 
-            <br/>
-            System Designed by Orpheus Digital
-        </p>
         <p>
         Version: 1.0.0
-        </p>
-        <p>
-            Copyrights © <a href="https://orpheus.digital" id="aboutLink">Solved by Orpheus</a> 2020
         </p>
     </div>
     <div class="mdl-dialog__actions">
