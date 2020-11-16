@@ -98,3 +98,5 @@ $route['attendance'] = 'pages/attendance';
 $route['attendance/(:num)'] = 'pages/attendance/$1';
 $route['attendance/view/(:num)'] = 'pages/attendance_view/$1';
 $route['attendance/new'] = 'pages/attendance_view/-1';
+
+$route['student'] = 'pages/student';

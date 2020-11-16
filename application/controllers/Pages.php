@@ -71,6 +71,38 @@ class Pages extends CI_Controller {
             'pagination' => $this->pagination->create_links()
         ));
     }
+    public function student($page = 0)
+    {
+        $this->load->model(array('student'));
+        $this->load->library(array('pagination'));
+
+        $response = $this->xuser->verifyToken();
+        if ($response === false)
+        {
+            show_404();
+        }
+
+        $config['per_page'] = 10;
+        $sortArr = null;
+
+        $dataList = $this->student->get_list(intval($page), $config['per_page'], array(), $sortArr);
+        $config['reuse_query_string'] = TRUE;
+        $config['base_url'] = base_url("user");
+        $config['total_rows'] = $dataList['count'];
+        
+        $config['attributes'] = array('class' => 'mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect');
+
+        $config['cur_tag_open'] = '<a class="mdl-button mdl-js-button mdl-button--raised" disabled>';
+        $config['cur_tag_close'] = '</a>';
+        $this->pagination->initialize($config);
+
+        $this->parser->parse('student', array(
+            'username' => $response['fullname'],
+            'title' => 'Students',
+            'data' => $dataList['result'],
+            'pagination' => $this->pagination->create_links()
+        ));
+    }
 
 }
 ?>
