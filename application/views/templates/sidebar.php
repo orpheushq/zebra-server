@@ -15,7 +15,7 @@
         <nav class="demo-navigation mdl-navigation">
 
           <a class="mdl-navigation__link" href="<?=base_url()?>attendance"><i class="material-icons" role="presentation">list_alt</i>Attendance</a>
-          <a class="mdl-navigation__link" href="<?=base_url()?>student"><i class="material-icons" role="presentation">list_alt</i>Students</a>
+          <a class="mdl-navigation__link" href="<?=base_url()?>student"><i class="material-icons" role="presentation">school</i>Students</a>
 
           <div class="mdl-layout-spacer"></div>
           <button class="mdl-menu__item mdl-navigation__link" id="btnAbout"><i class="material-icons" role="presentation">help_outline</i><span class="visuallyhidden">About</span>
